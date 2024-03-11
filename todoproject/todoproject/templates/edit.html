@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="shadow card">
+    <div class="card-body">
+        <form method="POST">
+        {% csrf_token %}
+            <p class="card-title"> {{f.as_p}} </p>
+            <button type="submit" >Update</button>
+        </form>
+
+    </div>
+</div>
+<!--<form method="POST">-->
+<!--    {% csrf_token %}-->
+<!--    <br>-->
+
+<!--    <p> {{f.as_p}} </p>-->
+<!--    <button type="submit" >Update</button>-->
+<!--</form>-->
+<!--    </div>-->
+{% endblock %}
